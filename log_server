@@ -1,0 +1,10 @@
+
+# OS setup
+- centos 7 set up
+- write os image to sd card (it cost much time)
+
+# Setting
+- keyboard setting (localectl)
+- Expand partition size
+- Wifi setting
+- yum setting
