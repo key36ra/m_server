@@ -7,6 +7,12 @@ function func_proxy(){
 	git config --global https.proxy http://$PROXY:8080
 }
 
+function func_unproxy(){
+	# Delete proxy config
+	git config --unset http.proxy
+	git config --unset https.proxy
+}
+
 function func_clone(){
 	# Clone remote repository
 	REPO=m_GR
