@@ -1,10 +1,9 @@
+# SDカードのセットアップ
+- CentOSのイメージファイルを用意
+- SDカードにCentOSを書き込む(時間がかかる)
 
-# OS setup
-- centos 7 set up
-- write os image to sd card (it cost much time)
-
-# Setting
-- keyboard setting (localectl)
-- Expand partition size
-- Wifi setting
-- yum setting
+# CentOSのセットアップ
+- キーボード設定 (localectl)
+- /のパーティションサイズを拡大
+- Wi-Fi設定
+- yumのアップデート
