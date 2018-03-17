@@ -9,8 +9,8 @@ function func_proxy(){
 
 function func_unproxy(){
 	# Delete proxy config
-	git config --unset http.proxy
-	git config --unset https.proxy
+	git config --global --unset http.proxy
+	git config --global --unset https.proxy
 }
 
 function func_clone(){
