@@ -42,3 +42,12 @@ function port_scan(){
 	p_end=1023
 	nc -z -v $target_host $p_start-$p_end
 }
+
+function source_routing(){
+	# connect to the host by way of specific router
+	target_host=localhost
+	target_port=8888
+	pass_router1=192.168.0.1
+	pass_router2=192.168.0.2
+	nc -g $pass_router1 -g $pass_router2 $target_host $target_port
+}

@@ -1,0 +1,6 @@
+# .serviceファイル用ディレクトリ
+/lib/systemd/system/
+
+# httpdサーバールート
+/opt/www/
+
