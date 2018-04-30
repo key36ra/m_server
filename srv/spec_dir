@@ -4,3 +4,11 @@
 # httpdサーバールート
 /opt/www/
 
+# ソースファイル用ダウンロードディレクトリ
+/usr/local/src/
+
+# インストールプログラム用ディレクトリ
+/usr/local/
+
+# デフォルトパス($PATH)
+/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:~/.local/bin:~/bin

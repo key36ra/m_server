@@ -65,4 +65,7 @@ function func_db(){
 	chown -R mysql:mysql /usr/local/mysql/include
 	cd /usr/local/src/mariadb*/include
 	cp -rf ./* /usr/local/mysql/include/mysql
+	# Mariadb client
+	yum -y install mariadb-server
+	mysql
 }
