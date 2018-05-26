@@ -7,7 +7,7 @@ now = datetime.now()
 commit = "{}/{}/{}-{}:{}:{}".format(now.year, now.month, now.day, now.hour, now.minute, now.second)
 
 file = open('update_confirm', 'a')
-file.write(commit)
+file.write("{}\n".format(commit))
 file.close()
 
 os.system('git add .')
