@@ -5,14 +5,14 @@ from datetime import datetime
 
 # Commit comment
 now = datetime.now()
-commit = "{}/{}/{}-{}:{}:{}".format(now.year, now.month, now.day, now.hour, now.minute, now.second)
+comment = datetime.now().strftime("%Y/%m/%d-%H:%M:%S")
 
 # Add comment to the update_confirm file
 file = open('update_confirm', 'a')
-file.write("{}\n".format(commit))
+file.write("{}\n".format(comment))
 file.close()
 
 # Push
 os.system('git add .')
-os.system('git commit -m {}'.format(commit))
+os.system('git commit -m {}'.format(comment))
 os.system('git push')

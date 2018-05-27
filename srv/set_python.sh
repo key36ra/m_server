@@ -68,4 +68,13 @@ function install_python(){
 	
 	# MariaDB client
 	pip install mysql-connector-python pymysql mysqlclient
+	
+	# Pandas
+	pip install pandas
+	
+	# BeautifulSoup4
+	pip install BeautifulSoup4
+	
+	# Seaborn
+	pip install seaborn
 }
