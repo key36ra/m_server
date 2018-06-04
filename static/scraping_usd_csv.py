@@ -11,15 +11,6 @@ from datetime import datetime
 import time
 import os
 
-# Proxy config for urllib.request
-proxy = {
-"http":"http://proxy.uec.ac.jp:8080",
-"https":"https://proxy.uec.ac.jp:8080"
-}
-proxy_handler = urllib.request.ProxyHandler(proxy)
-opener = urllib.request.build_opener(proxy_handler)
-urllib.request.install_opener(opener)
-
 # Yahoo finance
 url = "https://stocks.finance.yahoo.co.jp/stocks/detail/?code=USDJPY=X&serviceKanriId=USDJPY=X&pos=1&ccode=ofv"
 
