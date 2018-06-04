@@ -77,4 +77,15 @@ function install_python(){
 	
 	# Seaborn
 	pip install seaborn
+	
+	# Jupyter
+	pip install jupyter
+	cp jupyter.service /etc/systemd/system/
+	systemctl start jupyter
+	systemctl enable jupyter
+}
+
+function util_python(){
+	IP=192.168.0.2
+	jupyter notebook --ip=$IP --no-browser
 }
