@@ -1,0 +1,9 @@
+# This is sample usage of crontab
+# cron.tab is backup file
+# Write schedule as "min hour day mon week cmd"
+
+# execute cmd every minute
+* * * * * echo 'How are you?' > ~/greet.txt
+
+# execute cmd at 00:00 every day
+00 00 * * * /home/centm_ser0/m_server/git_push.py

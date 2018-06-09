@@ -1,0 +1,5 @@
+# Scraping usd/yen data every minute
+* * * * * /home/centm_ser0/m_server/static/usd_scraping_cron.py
+
+# Plot the data every hour
+00 * * * * /home/centm_ser0/m_server/static/usd_plot_cron.py

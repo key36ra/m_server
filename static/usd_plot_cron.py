@@ -5,7 +5,6 @@ This sample code is to plot figure to png file at shell.
 """
 
 # Time control module
-import time
 from datetime import datetime
 
 # Calculating module
@@ -19,11 +18,7 @@ import matplotlib.pyplot as plt
 
 file_name = 'usd.csv'
 
-while True:
-	if datetime.now().minute != 0:
-		time.sleep(60)
-		continue
-	
+def main():
 	df = pd.read_csv(file_name)
 	df['day-time'] = df['day'].astype(str) + '-' + df['hour'].astype(str) + ':' + df['minute'].astype(str)
 	
@@ -35,5 +30,5 @@ while True:
 	plt.savefig('/opt/www/htdocs/usd_plot.png')
 	
 	print(datetime.now().strftime("%Y/%m/%d-%H:%M:%S"))
-	
-	time.sleep(3550)
+
+main()
