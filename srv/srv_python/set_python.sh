@@ -81,6 +81,8 @@ function install_python(){
 	# Jupyter
 	pip install jupyter
 	cp jupyter.service /etc/systemd/system/
+	mkdir ~/.jupyter/
+	cp jupyter_notebook_config.py ~/.jupyter/
 	systemctl start jupyter
 	systemctl enable jupyter
 }
@@ -88,4 +90,5 @@ function install_python(){
 function util_python(){
 	IP=192.168.0.2
 	jupyter notebook --ip=$IP --no-browser
+	# access -> http://192.168.0.2:8888/?token=jupyter
 }

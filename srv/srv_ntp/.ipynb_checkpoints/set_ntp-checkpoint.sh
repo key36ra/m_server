@@ -11,9 +11,4 @@ function func_ntp(){
 	systemctl enable ntpd # auto start ntp at centos7
 	#chkconfig ntpd on # auto start ntp at centos6
 	ntpq -p # confirm syncronization with ntp server
-
-	# Backup now timezone
-	cp /etc/localtime /etc/localtime.bak
-	# Change timezone from UST to JST(Japan)
-	cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 }
