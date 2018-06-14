@@ -11,4 +11,4 @@ PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/centm_ser0/.local/b
 00 00 * * * /home/centm_ser0/m_server/git_push.py
 
 # To confirm
-* * * * * /usr/bin/env >> /home/centm_ser0/m_server/static/path
+#* * * * * echo $PATH >> /home/centm_ser0/m_server/static/path
