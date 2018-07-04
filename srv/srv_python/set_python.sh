@@ -85,10 +85,13 @@ function install_python(){
 	cp jupyter_notebook_config.py ~/.jupyter/
 	systemctl start jupyter
 	systemctl enable jupyter
+	
+	# Stats model
+	pip install statsmodels
 }
 
 function util_python(){
 	IP=192.168.0.2
-	jupyter notebook --ip=$IP --no-browser
+	jupyter notebook --ipx=$IP --no-browser
 	# access -> http://192.168.0.2:8888/?token=jupyter
 }
