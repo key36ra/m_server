@@ -10,7 +10,11 @@ function func_ntp(){
 	#/etc/rc.d/init.d/ntpd start # start ntp server at centos6
 	systemctl enable ntpd # auto start ntp at centos7
 	#chkconfig ntpd on # auto start ntp at centos6
-	ntpq -p # confirm syncronization with ntp server
+}
+
+function util_ntp(){
+    # Confirm syncronization with foreign ntp server
+    ntpq -p
 
 	# Backup now timezone
 	cp /etc/localtime /etc/localtime.bak
