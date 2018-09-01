@@ -1,0 +1,14 @@
+# crontab must pass through the path at first
+PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/centm_ser0/.local/bin:/home/centm_ser0/bin:/usr/local/python/bin
+
+# Scraping usd/yen data every minute
+* * * * * /home/centm_ser0/m_server/static/usd_scraping_cron.py
+
+# Plot the data every hour
+00 * * * * /home/centm_ser0/m_server/static/usd_plot_cron.py
+
+# Push m_server everyday
+00 00 * * * /home/centm_ser0/m_server/git_push.py
+
+# To confirm
+#* * * * * echo $PATH >> /home/centm_ser0/m_server/static/path
